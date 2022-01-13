@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" lang="fr">
+<style type="text/css">
+ul {
+  list-style-type: none;
+  margin: 0;
+  background-color: #f1f1f1;
+  padding:8px 25px;
+  float:left;
+  width:100%;
+  border:none;
+  display:block;
+  outline:0;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+ body {
+  margin: 0;
+  background-image: url("../MEDIA/L.jpg");
+  width: 90%;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  width: 107.5%;
+}
+.affiche{
+   width: 50%;
+   padding:  0px 25%;
+   display:block;
+}
+.col1{
+   background-color: grey;
+}.col3{
+     background-color: grey;
+ }
+ .col2{
+     background-color: blue;
+     width:80%;
+     text-align: center;
+     color: white;
+ }
+ .col4{
+        background-color: blue;
+        width:50%;
+        text-align: center;
+        color: white;
+ }
+ .card{
+      width: 80%;
+      background-color: black;
+ }
+ .Duree{
+    float: right;
+    padding: 0px 16px;
+ }
+ .gauche{text-align: left;}
+th{
+     text-align: center;
+     width: 50%;
+ }
+ table{
+        width: 100%;
+        color: black;
+ }
+.script{
+    padding: 15px 16px;
+}
+.Exp,td,th{
+      border:2px solid black;
+      border-collapse: collapse;
+}
+.tr1{
+    background-color: gray;
+    color: whitesmoke;
+    border-style: outset;
+}
+.tr2{
+    background-color: lightgray;
+}
+.tr3{
+  background-color: gray;
+  }
+.tr4{
+    background-color: lightgray;
+}
+.At{
+    list-style-type: square;
+}
+.RT{list-style-type: circle;border-style: outset;}
+dl{ border-style: outset; background-color: gray;}
+.imag{border-radius: 30%;width: 100%;}
+.Info{ width: 33.33%;padding: 15px;}
+.Grid{ display: table;}
+
+.colonne1 {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background-color: gray;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:400px) {
+  .colonne2 {
+    float: left;
+    width: 20%;
+   padding: 15px;
+   margin: 50px;
+   background-color: gray;
+  }
+}
+label{
+      border-style: outset;
+      border-color: blanchedalmond;
+      background-color: honeydew;
+}
+.Experience{
+     background-color: gainsboro;
+     width:50%;
+     border-style: outset;
+}
+.h4{
+      font-family: Roboto, sans-serif;
+}
+</style>
+<body>
+<div class="header" >
+  <h1 style="border-style: outset;">LE PORTFOLIO DE MASSA KOIVOGUI</h1>
+</div>
+<div  style="width:130px">
+<ul>
+  <li  class="ItemMenu  tablink" onclick="AfficheMenu(event, 'Profil')" ><a href="#P">Profil</a></li>
+  <li  class="ItemMenu  tablink" onclick="AfficheMenu(event, 'Formations')"><a href="#F">Formations</a></li>
+  <li  class="ItemMenu  tablink" onclick="AfficheMenu(event, 'Job')"><a href="#E">Job Étudiant</a></li>
+  <li  class="ItemMenu  tablink" onclick="AfficheMenu(event, 'Informatique')"><a href="#C2">Connaissance Informatique</a></li>
+  <li  class="ItemMenu  tablink" onclick="AfficheMenu(event, 'Reseaux')"><a href="#C">Connaissance en Réseaux</a></li>
+  <li  class="ItemMenu  tablink" onclick="AfficheMenu(event, 'Langues')"><a href="#L">Langues</a></li>
+  <li  class="ItemMenu  tablink" onclick="AfficheMenu(event, 'Atout')"><a href="#A">Atouts</a></li>
+</ul>
+</div>
+
+<div class="affiche" style="margin-left:130px">
+<div id="Atout" class="script" style="display:none">
+    <p>Centre d'intérêts</p>
+    <ul class="At">
+          <li>Curiosité scientifique et technologique</li>
+          <li>Bon relationnel</li>
+          <li>Créativité</li>
+          <li>Esprit d'équipe</li>
+          <li>Autonome</li>
+    </ul>
+  </div>
+  <div id="Informatique" class="script" style="display:none">
+    <p>Connaissances Informatique</p>
+     <dl class="Inf">Bureautique
+          <dd>World</dd>
+          <dd>PowerPoint</dd>
+          <dd>Excel</dd>
+     </dl>
+     <dl>
+        Langage de programmation
+        <dd>Java</dd>
+         <dd>Html</dd>
+          <dd>CSS</dd>
+           <dd>JavaScript</dd>
+            <dd>Programmation Orientée Object java</dd>
+     </dl>
+  </div>
+   <div id="Reseaux" class="script" style="display:none">
+    <p>Centre d'intérêts</p>
+    <ul class="RT">
+          <li>Créer et gérer des machines virtuelles Windows et Linux</li>
+          <li>Déployer OSPF,BGP</li>
+          <li>Déployer un DNS,DHCP,Active Directory </li>
+          <li>Manipuler des composants électronique via arduino et raspberrypi</li>
+          <li>Configurer un routeur cisco et un switch</li>
+          <li>Créer et gérer des VLAN</li>
+          <li>Adresser IPv4 et IPv6</li>
+    </ul>
+  </div>
+  <div id="Profil" class="script" style="display:none;background-color: none;" >
+<div class="row">
+  <div class="colonne1">
+   <img src="../MEDIA/Prof.jpeg" alt="Avatar"   class="imag">
+  </div> 
+  <div class="colonne2">
+     <label>Nom :</label> <label>Koivogui</label><br> <br>
+     <label>Prénom :</label><label>Massa</label><br><br>
+     <label>Adresse :</label><label>11 rue du magasin</label><br><br>
+     <label>Émail :</label> <label>massa.koivogui@edu.univ-fcomte.fr</label><br> <br>
+     <label>Téléphone :</label> <label>+3361036868</label><br> <br>
+  </div>
+  </div>  
+  </div>
+  <div id="Formations" class="script" style="display:none">
+    <h2>Formations</h2>
+    <table style="width:100%" class="Exp">
+  <tr class="tr1">
+           <th style="width:30%">Université </th>
+           <th>Domaine</th> 
+           <th style="width:30%">Période </th>
+          <th>Ville</th>
+  </tr>
+  <tr class="tr2">
+   		   <td>IUT Belfort-Montbéliard</td>
+   		   <td>Réseaux et Télécommunications</td>
+   		   <td>2020-2022</td>
+   		   <td>Montbéliard</td>
+  </tr>
+  <tr class="tr3">
+            <td>UFR Bourgogne Franche Compté</td>
+   		   <td>Informatique et Électronique</td>
+   		   <td>2018-2020</td>
+   		   <td>Dijon</td>
+  </tr>
+  <tr class="tr4">
+           <td>Baccalauréat </td>
+   		  <td>Scientifique</td>
+   		  <td>2016-2017</td>
+   		  <td>Kindia</td>
+  </tr>
+</table>
+  </div>
+  <div id="Job" class="script" style="display:none">
+     <div class="Experience">
+      <div>
+       <h4> Serveur/Buffalo-Grill/Belfort</h4>
+       <p>Actuellement</p>
+    </div>
+    <div>
+        <h4> Employé Commercial/Lecler/Lyon</h4>
+        <p> Mars 2020 - Mai 2020</p>
+    </div>
+    <div>
+         <h4>Agent Administrative/CROUS/Belfort</h4>
+         <p>Septembre 2021 - juin 2021</p>
+    </div>
+   <div>
+         <h4>Conseiller en Communication</h4>
+         <p>Actif depuis 2019</p>
+    </div>
+     </div>
+  </div>
+  
+  <div id="Langues" class="script" style="display:none">
+    <h2>Français</h2>
+    <div class="col1">
+           <div class="col2" >80%</div>
+    </div>
+    <h2>Anglais</h2>
+    <div class="col3">
+           <div class="col4" >50%</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function AfficheMenu(evt, variable) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("script");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("script");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" tdr ", ""); 
+  }
+  
+  document.getElementById(variable).style.display = "block";
+  evt.currentTarget.className += "tdr";
+}
+</script>
+
+</body>
+</html>
